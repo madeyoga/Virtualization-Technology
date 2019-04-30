@@ -144,10 +144,10 @@ int main(int argc, char **argv)
 	if (strcmp(todo, "ON") == 0) {
 		Vix_ReleaseHandle(jobHandle);
 		jobHandle = VixVM_PowerOn(vmHandle,
-									VMPOWEROPTIONS,
-									VIX_INVALID_HANDLE,
-									NULL, // *callbackProc,
-									NULL); // *clientData);
+					VMPOWEROPTIONS,
+					VIX_INVALID_HANDLE,
+					NULL, // *callbackProc,
+					NULL); // *clientData);
 		err = VixJob_Wait(jobHandle, VIX_PROPERTY_NONE);
 		if (VIX_FAILED(err)) {
 			goto abort;
@@ -156,9 +156,9 @@ int main(int argc, char **argv)
 	else if (strcmp(todo, "OFF") == 0) {
 		Vix_ReleaseHandle(jobHandle);
 		jobHandle = VixVM_PowerOff(vmHandle,
-									VIX_VMPOWEROP_NORMAL,
-									NULL, // *callbackProc,
-									NULL); // *clientData);
+					VIX_VMPOWEROP_NORMAL,
+					NULL, // *callbackProc,
+					NULL); // *clientData);
 		err = VixJob_Wait(jobHandle, VIX_PROPERTY_NONE);
 		if (VIX_FAILED(err)) {
 			goto abort;
@@ -167,9 +167,9 @@ int main(int argc, char **argv)
 	else if (strcmp(todo, "SUSPEND") == 0) {
 		Vix_ReleaseHandle(jobHandle);
 		jobHandle = VixVM_Suspend(vmHandle,
-									VIX_VMPOWEROP_NORMAL,
-									NULL, // *callbackProc,
-									NULL); // *clientData);
+					VIX_VMPOWEROP_NORMAL,
+					NULL, // *callbackProc,
+					NULL); // *clientData);
 		err = VixJob_Wait(jobHandle, VIX_PROPERTY_NONE);
 		if (VIX_FAILED(err)) {
 			goto abort;
