@@ -1,7 +1,3 @@
-/* *********************************************************************
- * Copyright (C) 2007-2015 VMware, Inc. All Rights Reserved. -- VMware Confidential
- * *********************************************************************/
-
 /* This demonstrates how to open a virtual machine,
  * power it on, and power it off.
  *
