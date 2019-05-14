@@ -1,17 +1,3 @@
-/* *********************************************************************
-* Copyright (c) 2007 VMware, Inc.
-* All rights not expressly granted to you by VMware, Inc. are reserved.
-* *********************************************************************/
-
-/*
-* This demonstrates how to set up and use guest operations.
-* This assumes that the guest OS is Linux.
-*
-* It executes 'ls' on the guest OS, redirecting it to a file.
-* It then copies that output file to the host.
-* Finally it cleans up on the guest.
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -19,8 +5,7 @@
 
 /*
 * guest OS username/password
-*/
-#define  GUEST_USERNAME "hnp"
+*#define  GUEST_USERNAME "hnp"
 #define  GUEST_PASSWORD "hnPalit"
 
 /*
@@ -80,15 +65,13 @@
 
 static char *progname;
 
-static void
-usage()
+static void usage()
 {
 	fprintf(stderr, "Usage: %s <vmxpath>\n", progname);
 	fprintf(stderr, "%s\n", VMXPATH_INFO);
 }
 
-int
-main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	char       *vmpath;
 	VixError    err;
