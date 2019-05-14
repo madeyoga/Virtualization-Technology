@@ -75,8 +75,7 @@ static char *progName;
  */
 
 ////////////////////////////////////////////////////////////////////////////////
-static void
-usage()
+static void usage()
 {
    fprintf(stderr, "Usage: %s <vmxpath> ON\n", progName);
    fprintf(stderr, "%s\n", VMXPATH_INFO);
@@ -116,7 +115,7 @@ int main(int argc, char **argv)
                                 PASSWORD, // *password,
                                 0, // options,
                                 VIX_INVALID_HANDLE, // propertyListHandle,
-                                NULL, // *callbackProc,
+                                NULL,  // *callbackProc,
                                 NULL); // *clientData);
     err = VixJob_Wait(jobHandle, 
                       VIX_PROPERTY_JOB_RESULT_HANDLE, 
