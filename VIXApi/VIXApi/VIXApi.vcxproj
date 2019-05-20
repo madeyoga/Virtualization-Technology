@@ -25,7 +25,8 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{F47CC96C-5590-43A5-9699-5F511CAC530F}</ProjectGuid>
     <RootNamespace>VIXApi</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>VIXPower</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
